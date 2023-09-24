@@ -166,7 +166,7 @@ The security configuration defines access control for the endpoints based on rol
 
 - **`/api/auth/**`** endpoints are open to all (permit All).
 - **`/api/admin/**`** endpoints require the role "ADMIN."
-- **`/api/task/**`** endpoints require the role "USER."
+- **`/api/task/**`** endpoints require the role "USER"/"ADMIN."
 
 **Endpoint: /v3/api-docs/**
 
