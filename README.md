@@ -50,7 +50,7 @@ Creating a RESTful API for a task management system with features like task prio
             "name" : "string",
             "email" : "string",
             "password" : "string",
-            "role" : "ADMIN"/"USER"
+            "role" : "ADMIN/USER"
         }
         ```
         
@@ -111,9 +111,9 @@ Creating a RESTful API for a task management system with features like task prio
         Request Body: TaskRequest
         {
             "taskDescription" : "string",
-            "taskStatus" : "DONE"/"PENDING",
+            "taskStatus" : "DONE/PENDING",
             "taskPriority" : 0,
-            "taskCategory" : "WORK"/"PERSONAL"/"SHOPPING"/"HEALTH"/"EDUCATION"/"OTHER"
+            "taskCategory" : "WORK/PERSONAL/SHOPPING/HEALTH/EDUCATION/OTHER"
         }
         ```
         
@@ -128,9 +128,9 @@ Creating a RESTful API for a task management system with features like task prio
         Response: List of TaskResponse
         {
           "taskDescription": "string",
-          "taskStatus": "DONE"/"PENDING",
+          "taskStatus": "DONE/PENDING",
           "taskPriority": 0,
-          "taskCategory": "WORK"/"PERSONAL"/"SHOPPING"/"HEALTH"/"EDUCATION"/"OTHER",
+          "taskCategory": "WORK/PERSONAL/SHOPPING/HEALTH/EDUCATION/OTHER",
           "taskCreationTime": "2023-09-15T10:00:00Z",
           "taskUpdationTime": "2023-09-15T12:30:00Z"
         }
@@ -145,9 +145,9 @@ Creating a RESTful API for a task management system with features like task prio
         Request Body: TaskRequest
         {
             "taskDescription" : "string",
-            "taskStatus" : "DONE"/"PENDING",
+            "taskStatus" : "DONE/PENDING",
             "taskPriority" : 0,
-            "taskCategory" : "WORK"/"PERSONAL"/"SHOPPING"/"HEALTH"/"EDUCATION"/"OTHER"
+            "taskCategory" : "WORK/PERSONAL/SHOPPING/HEALTH/EDUCATION/OTHER"
         }
         ```
         
@@ -166,8 +166,7 @@ The security configuration defines access control for the endpoints based on rol
 
 - **`/api/auth/**`** endpoints are open to all (permit All).
 - **`/api/admin/**`** endpoints require the role "ADMIN."
-- **`/api/task/**`** endpoints require the role "USER/ADMIN."
-
+  
 **Endpoint: /v3/api-docs/**
 
 You can use this endpoint to explore the API documentation, including details about available endpoints, request and response formats, and more.
